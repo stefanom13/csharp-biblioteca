@@ -19,6 +19,8 @@ namespace csharp_biblioteca
         {
             this.nome = nome;
             this.cognome = cognome;
+            this.email = email;
+            this.password = password;
             this.recapitoTelefonico = recapitoTelefonico;
         }
         public void stampaInfoUtente()
