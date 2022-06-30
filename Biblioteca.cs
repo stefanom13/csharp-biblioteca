@@ -6,8 +6,16 @@ using System.Threading.Tasks;
 
 namespace csharp_biblioteca
 {
-    internal class Biblioteca
+    public class Biblioteca
     {
-
+        protected string nome;
+        public Biblioteca(string nome)
+        {
+            this.nome = nome;
+        }
+        public void Riproduci()
+        {
+            Console.WriteLine("Nome:" + this.nome);
+        }
     }
 }
