@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace csharp_biblioteca
 {
-    public class Utente : Biblioteca
+    public class Utente 
     {
         private string nome;
         private string cognome;
@@ -15,7 +15,7 @@ namespace csharp_biblioteca
         private int recapitoTelefonico;
 
 
-        public Utente(string nome, string cognome, string email, string password, int recapitoTelefonico) : base("")
+        public Utente(string nome, string cognome, string email, string password, int recapitoTelefonico)
         {
             this.nome = nome;
             this.cognome = cognome;

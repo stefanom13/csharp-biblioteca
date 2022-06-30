@@ -22,4 +22,4 @@
 
 using csharp_biblioteca;
 
-Console.WriteLine("Hello, World!");
+Console.WriteLine("Sta Funzionando");
