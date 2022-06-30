@@ -8,7 +8,7 @@ namespace csharp_biblioteca
 {
     internal class Libro :  Documenti
     {
-        protected int nPagine;
+        protected int nPagine { get; set; } 
         public string ISBN;
 
         public Libro(int codice, string ISBN, string titolo, int rilasciatoInData, string settore, bool disponibilità, int posizioneScaffale, string autore, int nPagine) : base(codice, titolo, rilasciatoInData, settore, disponibilità, posizioneScaffale, autore)
