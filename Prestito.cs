@@ -8,19 +8,16 @@ namespace csharp_biblioteca
 {
     internal class Prestito 
     {
-        public DateTime dal;
-        public DateTime al;
+        
         public Documenti doc;
+        public Utente utente;
 
-        public Prestito(DateTime dal, DateTime al, Documenti doc)
+
+
+        public Prestito(Documenti doc, Utente utente)
         {
-            this.dal = dal;
-            this.al = al;
             this.doc = doc;
+            this.utente = utente;
         }
-        //public void stampaInfoUtente()
-       // {
-          
-       // }
     }
 }

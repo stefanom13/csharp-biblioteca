@@ -26,34 +26,49 @@ namespace csharp_biblioteca
             this.eLoggato = true;
         }
 
-        public void EffettuaPrestito(DateTime inizio, DateTime fine)
-        {
-           
-        }
-
-
 
         public void stampaInfoUtente()
         {
             Console.WriteLine("Nome:" + this.nome);
             Console.WriteLine("cognome:" + this.cognome);
             Console.WriteLine("email:" + this.email);
-            Console.WriteLine("password:" + this.password);
             Console.WriteLine("Nome:" + this.recapitoTelefonico);
-            
-         
-        }
-        public Documenti CercaTitolo(string titolo, Biblioteca biblioteca)
-        {
-            Documenti documentoDaPassare = null;
-            foreach (Documenti doc in biblioteca.listaDocumenti)
-            {
-                if (titolo == doc.titolo)
-                {
-                    documentoDaPassare = doc;
-                }
-            }
-            return documentoDaPassare;
+
+
         }
 
+        public string CercaTitolo()
+        {
+            Console.Write("Cerca per titolo: ");
+            string titoloCercato = Console.ReadLine();
+
+            return titoloCercato;
+        }
+
+        public int CercaPerCodice()
+        {
+            Console.Write("Cerca per codice: ");
+            int codiceCercato = Int32.Parse(Console.ReadLine());
+
+            return codiceCercato;
+        }
+
+        public Prestito EffettuaPrestito(Documenti doc, Utente utente, DateTime dal, DateTime al)
+        {
+            if (doc.disponibilità)
+            {
+
+                Prestito prestito = new Prestito();
+
+                return prestito;
+            }
+            return null;
+
+        }
+
+        public void EffettuaPrestito(DateTime inizio, DateTime fine)
+        {
+
+        }
+    }
 }

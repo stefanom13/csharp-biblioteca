@@ -11,7 +11,7 @@ namespace csharp_biblioteca
         protected int durata;
         public int numeroSeriale;
 
-        public Dvd(int codice, int numeroSeriale, string titolo, int rilasciatoInData, string settore, bool disponibilità, int posizioneScaffale, string autore, int durata) : base(codice, titolo, rilasciatoInData, settore, disponibilità, posizioneScaffale, autore)
+        public Dvd(int codice, int numeroSeriale, string titolo, int rilasciatoInData, string settore, bool disponibilità, int posizioneScaffale, string autore, int durata) : base(codice, titolo, rilasciatoInData, settore, posizioneScaffale, autore)
         {
             this.durata = durata;
             this.numeroSeriale = numeroSeriale;
